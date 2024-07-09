@@ -1,9 +1,9 @@
-using FMAdminServices.Dtos.Response;
+using src.Response;
 using src.ViewModels;
 
 namespace src.Interface{
     public interface IAuth{
-        Task<ApiResponse<SuccessResponse>> CreateUser(UserViewModel viewModel);
-        Task<ApiResponse<SuccessResponse>> Login(UserViewModel viewModel);
+        Task<object> CreateUser (RegisterViewModel viewModel);
+        Task<object> Login(UserViewModel viewModel);
     }
 }
